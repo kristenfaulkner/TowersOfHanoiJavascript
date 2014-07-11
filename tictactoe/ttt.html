@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <script src="underscore.js"></script>
+        <script src="jquery.js"></script>
+        <script type="text/javascript" src="ttt.js"></script>
+        <script type="text/javascript" src="ttt_ui.js"></script>
+        <link href="ttt.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Welcome to Tic-Tac-Toe!</h1>
+        <div class="grid">
+            <div class='top left' id="[0,0]"></div>
+            <div class='top center' id="[0,1]"></div>
+            <div class='top right' id="[0,2]"></div>
+            <div class='middle left' id="[1,0]"></div>
+            <div class='middle center' id="[1,1]"></div>
+            <div class='middle right' id="[1,2]"></div>
+            <div class='bottom left' id="[2,0]"></div>
+            <div class='bottom center' id="[2,1]"></div>
+            <div class='bottom right' id="[2,2]"></div>
+        </div>
+        
+        <script charset="utf-8">
+          $(function () {
+            var game = new TTT.Game($('.grid'));
+            var ui = new TTT.UI($('.grid'), game);
+            ui.setupHandlers();
+          });
+        </script>
+    </body>
+    </html>
+    
+    
+
+    

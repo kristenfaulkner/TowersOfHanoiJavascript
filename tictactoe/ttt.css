@@ -1,0 +1,36 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.grid {
+    width: 306px;
+    height: 306px;
+    align: center;
+}
+
+.grid div {
+    height: 99px;
+    width: 99px;
+    float: left;
+    font-size: 20;
+}
+
+.left {
+    border-right: thick solid black;
+}
+
+.top {
+    border-bottom: thick solid black;
+}
+
+.bottom {
+  border-top: thick solid black;
+}
+
+.right {
+  border-left: thick solid black;
+}
